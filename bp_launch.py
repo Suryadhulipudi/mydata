@@ -4,7 +4,7 @@ This script is used to get the list of projects,blueprints and applications of
 the particular PE's which got unregistered from Calm PC
 Usage:
 python Calm_Details_PE_Unregistration.py and enter user input values
-Devops can modify this, as per their convenience
+Devops can modify this, as per their convenience.
 """
 import json
 import sys
