@@ -1,5 +1,9 @@
 node{
     stage("calm bp launch") {
-             step([$class: 'CalmIntegrationLeader', blueprintName: 'TestAHV', appName: 'TestAHV_${BUILD_ID}', pfName: 'Default', projectName: 'default', appStart: 'true',actionName: 'None', runtimeVariables: '{"appProfileVariables": {"surya": "adsasd","harsha": "init"}}'])
+             step([$class: 'BlueprintLaunch', blueprintName: 'TestAHV', applicationName: 'TestAHV_${BUILD_ID}', appProfileName: 'Default', projectName:'default', waitForSuccessFulLaunch: true, actionName: 'None', runtimeVariables: '{"appProfileVariables": {},"appProfileActionVariables": {}}']) 
         }
+        
+    stage("Delete application") {
+             step([$class: 'DeleteApplication', deleteApp: true])
+}
 }
