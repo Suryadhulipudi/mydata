@@ -16,6 +16,17 @@ class LinkedList:
             while n is not None:
                 print(n.data)
                 n = n.ref
+                
+    def reverse(self):
+        prev = None
+        current = self.head
+        while(current is not None):
+            nxt = current.ref
+            current.ref = prev
+            prev = current
+            current = nxt
+        self.head = prev
+    
     def add_begin(self,data):
         new_node = Node(data)
         new_node.ref = self.head
@@ -84,6 +95,9 @@ class LinkedList:
             print("Node is not present")
         else:
             n.ref=n.ref.ref
+            
+     
+            
         
     
 
@@ -91,5 +105,6 @@ LL1 = LinkedList()
 LL1.add_begin(10)
 LL1.add_end(100)
 LL1.add_begin(20)
-LL1.delete_by_value(100)
+LL1.print_LL()
+LL1.reverse()
 LL1.print_LL()
