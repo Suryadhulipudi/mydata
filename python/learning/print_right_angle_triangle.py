@@ -22,3 +22,15 @@ def print_star(userinput):
             print()
 
 print_star(userinput)
+
+#Method Reverse 
+rows = int(input("Please enter number of rows:"))
+
+def reverse_righ_angle(rows):
+    for i in range(rows,0,-1):
+        while i>0:
+            print("*", end=" ")
+            i = i-1
+        print()
+            
+reverse_righ_angle(rows)
