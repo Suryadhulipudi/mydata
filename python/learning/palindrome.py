@@ -9,3 +9,17 @@ def palindrome(n):
         print(n,"is not palindrome")
         
 palindrome(n)
+
+#Method to print palindrome numbers
+start = 0
+end = 500
+
+def palindrome(start,end):
+    for i in range(start, end+1):
+        i = str(i)
+        if i == i[::-1]:
+            print(i,"is palindrome")
+        else:
+            print(i,"is not palindrome")
+            
+palindrome(start,end)
