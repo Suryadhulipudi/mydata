@@ -1,4 +1,4 @@
-#Method check given number palindrome or not 
+#Method check given number palindrome(ex: 121, 242) or not 
 n = input("Enter a input:")
 
 def palindrome(n):

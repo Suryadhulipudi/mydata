@@ -1,4 +1,4 @@
-#Print perfect numbers
+#Print perfect numbers, sum of divisors = give number
 start = 0
 end = 500
 

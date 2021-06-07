@@ -1,3 +1,4 @@
+#Armstrong number(The digit numbers equal to the sum of the powers of their digits ex: 1^3+5^3+3^3 = 153)
 given_number = int(input("Enter a number:"))
 
 def armstrong(given_number):
