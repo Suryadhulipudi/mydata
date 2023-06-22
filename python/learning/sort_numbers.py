@@ -14,6 +14,3 @@ for i in range (Number):
             NumList[j] = temp
 
 print("Element After Sorting List in Ascending Order is : ", NumList)
-
-#Method-2
-
