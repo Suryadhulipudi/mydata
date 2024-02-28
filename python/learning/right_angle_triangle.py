@@ -1,4 +1,14 @@
-#Method 1
+#Method-1
+def print_right_angle_triangle(height):
+    for i in range(1, height + 1):
+        print('*' * i)
+
+# Example usage
+height = 5
+print_right_angle_triangle(height)
+
+
+#Method 2
 userinput = int(input("Please enter number of line:"))
 
 def print_star(userinput):
@@ -12,7 +22,7 @@ print_star(userinput)
 
 
 
-#Method 2
+#Method 3
 userinput = int(input("Please enter number of line:"))
 
 def print_star(userinput):
