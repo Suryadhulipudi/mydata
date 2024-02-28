@@ -33,7 +33,16 @@ def print_star(userinput):
 
 print_star(userinput)
 
-#Method Reverse 
+#Method Reverse-1
+def print_reverse_right_angle_triangle(height):
+    for i in range(height, 0, -1):
+        print('*' * i)
+
+# Example usage
+height = 5
+print_reverse_right_angle_triangle(height)
+
+#Method Reverse-2
 rows = int(input("Please enter number of rows:"))
 
 def reverse_righ_angle(rows):
