@@ -1,3 +1,23 @@
+#Simple Method
+def print_diamond(height):
+    # Print top half of the diamond
+    for i in range(1, height + 1):
+        # Print spaces
+        print(" " * (height - i), end="")
+        # Print asterisks
+        print("*" * (2 * i - 1))
+
+    # Print bottom half of the diamond
+    for i in range(height - 1, 0, -1):
+        # Print spaces
+        print(" " * (height - i), end="")
+        # Print asterisks
+        print("*" * (2 * i - 1))
+
+# Example usage
+height = 5
+print_diamond(height)
+
 #Pyramid Method
 userinput = int(input("Please enter number of rows:"))
 
