@@ -3,7 +3,7 @@ def get_unique_filenames_per_row(file_content):
     result = []
     for line in file_content.split('\n'):
         filenames = line.split('|')
-        filenames_without_extension = set()
+        filenames_without_extension = []
         for filename in filenames:
             filename_without_extension = filename.split('.')[0]
             filenames_without_extension.add(filename_without_extension)
