@@ -1,7 +1,31 @@
 # Python 3 program to print run
 # length encoding of a string
 
-#Method-1 
+#Method-1
+def count_consecutive_chars(s):
+    if not s:
+        return []
+
+    result = []
+    current_char = s[0]
+    count = 1
+
+    for i in range(1, len(s)):
+        if s[i] == current_char:
+            count += 1
+        else:
+            result.append((current_char, count))
+            current_char = s[i]
+            count = 1
+
+    result.append((current_char, count))
+    return result
+
+# Test the function
+s = "aabbbccdd"
+print(count_consecutive_chars(s))  # Output: [('a', 2), ('b', 3), ('c', 2), ('d', 2)]
+
+#Method-3 
 def printRLE(s) :
  
     i = 0
@@ -31,7 +55,7 @@ if __name__ == "__main__" :
     printRLE("GeeeEEKKKss")
     printRLE("cccc0ddEEE")
  
-#Method-2
+#Method-3
 def find_repetitive_chars(string):
     char_counts = {}
     repetitive_chars = []
