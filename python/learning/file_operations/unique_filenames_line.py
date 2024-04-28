@@ -6,7 +6,7 @@ def get_unique_filenames_per_row(file_content):
         filenames_without_extension = []
         for filename in filenames:
             filename_without_extension = filename.split('.')[0]
-            filenames_without_extension.add(filename_without_extension)
+            filenames_without_extension.append(filename_without_extension)
         unique_filenames = [filename for filename in filenames if filenames_without_extension.count(filename.split('.')[0]) == 1]
         result.append('|'.join(unique_filenames))
     return '\n'.join(result)
